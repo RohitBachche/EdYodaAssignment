@@ -30,3 +30,20 @@ old pod terminating and new pod is created
 [root@ip-172-31-30-127 k8s-specifications]#kubectl delete po 
 After deleting db node, result app is not working. To restart result app delete result app
 deleting worker results in loss of all previous logs.
+
+
+Assignment 1
+=============
+
+RC And RS will allocate pods  in any of the worker node to make it desired=current
+but if we want that all the pods should be in different nodes then we use the Daemon set.
+and deleting daemon set will delete all the pods that daemon set has created.
+e.g.,To run a daemon for node monitoring on every node.
+
+
+
+
+
+
+
+
